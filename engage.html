@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engage</title>
+  <meta name="description" content="Engage with riddles, logic puzzles, and mind games designed to create insight." />
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Floating status chip -->
+  <div id="statusChip" class="status-chip hidden"></div>
+
+  <div class="container">
+    <h1>Engage</h1>
+    <p class="subtitle">
+      Choose how you want to think.  
+      There are no right answers — only interesting ones.
+    </p>
+
+    <!-- CATEGORY SELECTION -->
+    <div id="categoryGrid" class="category-grid">
+      <button onclick="startCategory('logic')">Logic</button>
+      <button onclick="startCategory('riddle')">Riddles</button>
+      <button onclick="startCategory('decision')">Decisions</button>
+      <button onclick="startCategory('mind')">Mind Games</button>
+    </div>
+
+    <!-- CHALLENGE AREA -->
+    <div id="challengeArea" class="challenge-container hidden">
+      <h2 id="challengeTitle"></h2>
+      <p id="challengeQuestion"></p>
+
+      <div id="options" class="options"></div>
+
+      <div id="reflectionBox" class="reflection-text hidden">
+        <div id="reaction" class="reaction"></div>
+        <p id="reflectionText"></p>
+
+        <div class="buttons">
+          <button class="secondary-button" onclick="nextInSameCategory()">
+            Another one
+          </button>
+          <button class="secondary-button" onclick="resetToCategories()">
+            Switch mode
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+
+  <script src="./js/thinking-data.js"></script>
+  <script src="./js/engage.js"></script>
+</body>
+</html>

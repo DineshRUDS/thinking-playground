@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore</title>
+  <meta name="description" content="Explore thoughtful prompts and ideas. No answers required." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Explore</h1>
+    <p>Ideas to sit with. No answers required.</p>
+
+    <div id="exploreCards" class="curiosity-cards"></div>
+
+    <div class="buttons">
+      <!-- DIRECT onclick: no binding issues -->
+      <button class="secondary-button" onclick="loadExplore()">
+        Show more ideas
+      </button>
+    </div>
+
+    <div class="navigation">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- Scripts (order matters) -->
+  <script src="./js/thinking-data.js"></script>   
+  <script src="./js/explore.js"></script>
+</body>
+</html>
