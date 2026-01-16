@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>index.html</loc></url>
-  <url><loc>explore.html</loc></url>
-  <url><loc>engage.html</loc></url>
+
+  <url>
+    <loc>https://dineshruds.github.io/thinking-playground/</loc>
+  </url>
+
+  <url>
+    <loc>https://dineshruds.github.io/thinking-playground/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://dineshruds.github.io/thinking-playground/explore.html</loc>
+  </url>
+
+  <url>
+    <loc>https://dineshruds.github.io/thinking-playground/engage.html</loc>
+  </url>
+
 </urlset>
